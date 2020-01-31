@@ -1,68 +1,44 @@
-.email-container {
-	width: 213px;
-	height: 131px;
+.emailblock-container {
+	display: flex;
+	width: 273px;
+	height: 182px;
 	border: 1px solid rgba(67, 67, 67, 0.5);
- 	margin: 0 auto;
- 	margin-top: 20%;
- 	padding-left: 21px;
- 	padding-top: 7px;
- 	padding-right: 6px;
- 	padding-bottom: 3px;
+	position: absolute;
+ 	left: 50%;
+ 	top: 50%;
+ 	-webkit-transform: translate(-50%, -50%);
+ 	-moz-transform: translate(-50%, -50%);
+ 	-ms-transform: translate(-50%, -50%);
+ 	-o-transform: translate(-50%, -50%);
+ 	transform: translate(-50%, -50%);
+ 	border-radius: 6px;
+ 	box-shadow: 1px 1px 7px #666;
 }
 
 .email-block {
-
+	display: inline-block;
+	margin-top: 4px;
 }
 
 a.button {
-	width: 163px;
-	height: 33px;
+	width: 229px;
+	height: 32px;
 	text-decoration: none;
 	color: #000000;
 	background-color: #E4E4E4;
 	text-align: center;
 	display: block;
-	font: normal 13px arial;
+	font: normal 14px arial;
+	padding-top: 15px;
 	position: absolute;
+	border-radius: 2px;
  	left: 50%;
- 	top: 46%;
+ 	top: 50%;
  	-webkit-transform: translate(-50%, -50%);
  	-moz-transform: translate(-50%, -50%);
  	-ms-transform: translate(-50%, -50%);
  	-o-transform: translate(-50%, -50%);
  	transform: translate(-50%, -50%);
- 	display: inline-flex;
- 	justify-content: center;
- 	align-items: center;
- 	text-align: center;
-}
-
-.button-back {
-	width: 163px;
-	height: 33px;
-	text-decoration: none;
-	color: #000000;
-	background-color: #E4E4E4;
-	text-align: center;
-	display: block;
-	font: normal 13px arial;
-	position: absolute;
- 	left: 50%;
- 	top: 46%;
- 	-webkit-transform: translate(-50%, -50%);
- 	-moz-transform: translate(-50%, -50%);
- 	-ms-transform: translate(-50%, -50%);
- 	-o-transform: translate(-50%, -50%);
- 	transform: translate(-50%, -50%);
- 	display: inline-flex;
- 	justify-content: center;
- 	align-items: center;
- 	text-align: center;
-}
-
-a.button-back:not(.active):hover,
-a.button-back:not(.active):focus {
-  	background-color: #D3D1CB;
 }
 
 a.button:not(.active):hover,
@@ -80,6 +56,7 @@ a.email {
 	line-height: 16px;
 	text-decoration: none;
 	color: #000000;
+	justify-content: flex-start;
 }
 
 a.email:not(.active):hover {
@@ -96,8 +73,9 @@ a.reg-email {
 	font-size: 14px;
 	line-height: 16px;
 	text-decoration: none;
-	color: #D3D1CB;
+	color: #808080;
 	float: right;
+	justify-content: flex-end;
 }
 
 a.reg-email:not(.active):hover {
@@ -113,11 +91,32 @@ a.get-plus {
 	font-weight: normal;
 	font-size: 14px;
 	line-height: 16px;
-	align-items: center;
+	justify-content: center;
 	color: #90BCFF;
-	align-content: space-between;
+	
 }
 
 a.get-plus:not(.active):hover {
 	color: #FC2727;
+}
+
+a.buttonback {
+	width: 163px;
+	height: 26px;
+	text-decoration: none;
+	color: #000000;
+	background-color: #E4E4E4;
+	text-align: center;
+	display: block;
+	margin-left: 25px;
+	margin-right: 25px;
+	margin-top: 49px;
+	margin-bottom: 49px;
+	font: normal 14px arial;
+	padding-top: 7px;
+}
+
+a.buttonback:not(.active):hover,
+a.buttonback:not(.active):focus {
+  	background-color: #D3D1CB;
 }
